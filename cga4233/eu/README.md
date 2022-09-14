@@ -4,7 +4,7 @@ label these images were dumped off of is shown below:
 ![label](label.jpg)
 
 
-The first NOR flash dump (`flash1_full.bin`) was created by desoldering the BGA chip. The other `flash1*.bin` dumps were created after getting root on the Linux part of the firmware.
+The first NOR flash dump (`flash1.bin`) was created by desoldering the BGA chip. The other `flash1*.bin` dumps were created after getting root on the Linux part of the firmware.
 
 The flash layout (taken from `/proc/mtd` is as follows):
 
