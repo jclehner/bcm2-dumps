@@ -1,0 +1,2 @@
+mtd5_flash1.rg0.bin filter=lfs diff=lfs merge=lfs -text
+mtd8_flash1.rg1.bin filter=lfs diff=lfs merge=lfs -text
