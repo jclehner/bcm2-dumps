@@ -40,8 +40,12 @@ mtd26: 00070000 00010000 "flash0.rgnonvol1"
 mtd27: 00800000 00010000 "flash0"
 ```
 
-Bootlogs of the two UART consoles:
+bootlogs of the two UART consoles:
 
-* [RG](bootlog_rg.txt)
+* [RG](bootlog_rg.txt) (stock)
+* [RG](bootlog_rg_unlocked.txt) (unlocked)
 * [CM](bootlog_cm.txt)
+
+If you want root access to the Linux part, flash `nvram_root.bin` to both `flash0.nvram`
+and `flash0.nvram1` partitions. This launches Linux with `init=/bin/sh`.
 

@@ -1,0 +1,871 @@
+PU 01
+BCM33900060
+PRID33900060
+v1.18
+RR:00000001
+BFW
+layoutNum = 3
+Board is FGR or later.
+AVS init...
+B11
+STB V=00002823 D=000002af
+DCM V=0000283c D=000002a0
+AVS init OK
+AVS load:select_image: addr_offset: 00005800 part_offset: 00000000 bootStatus: 2a002b00
+AVS load_code offset =00005800
+LOADED
+AVS: overtemp mon ON
+
+single board
+OTP Market ID        = 00000c3e
+FSBL Market ID       = 00000c3e
+Market ID Mask       = 00ffffff
+Secure Boot
+MARKET ID VALIDATION : PASS
+MEMSYS-ALT
+MEMSYS AUTHENTICATION: PASS
+SHMOO 03030100 BLD:memsys_3.3.0.0-5-gbbc1e43a0 HW:hpg0_generic V:3.3.1.0
+MCB: FLEX
+AVS start:status=000000ff
+STB: Current voltage=00000367(871)
+ temperature=000075e4(30180)
+ PV=00000333(819)
+ MV=0000035d(861)
+DCD: Current voltage=00000365(869)
+ temperature=00007216(29206)
+ PV=0000033b(827)
+ MV=0000035a(858)
+AVS FW rev=30313978 [0.1.9.x]
+OK
+DDR0: MCB#2-2 !@ ffe0e318 <= ffe0de50 MEMSYS-0 @ f1500000 
+DDR SCRAMBLER ENABLED
+OK
+Secure boot detected
+SSBL.SAO PROBE... found
+COPY CODE... DONE - CRC OK
+SSBL AUTHENTICATION: PASS
+Using SSBL_ALT
+
+[33;1m      T E C H N I C O L O R     [0m 
+[33;1m   _ _ _ _ _ _ _ _ _ _ _ _ _ _  [0m 
+[33;1m  /_/_/_/_/_/_/_/_/_/_/_/_/_/_/ [0m eBOLT 3.62.7.10 Bank SSBL_ALT
+[33;1m  | | |_| | | |_| |_|_| |_| | | [0m 
+[33;1m  |_| | |_| |_| | | | |_| |_|_| [0m 
+[33;1m    |_|   |_|   |_| |_|     |_| [0m 
+[0m
+RESET CAUSE: 0x000001 power_on (1 of 32 possible causes)
+[33;1mOverriding chip ID to be 3390, actual chip ID 0000[0m
+[31;1mMAC ADDRESS CHECKSUM FAILED[0m
+[33;1mMAC ADDRESS NOT PROGRAMMED; use macprog command[0m
+AVS: park check
+AVS: temperature monitoring enabled
+AVS: STB: V=0.870V, T=+30.667C, PV=0.819V, MV=0.861V, FW=30313978 [0.1.9.x]
+AVS: DCD: V=0.867V, T=+30.180C, PV=0.827V, MV=0.858V
+warning: did not add macaddr to /pcie@f10c0000/pci@5,0
+Uncompressing Linux... done, booting the kernel.
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.14.28-Prod_18.1 (jenkins@chenscbb02) (gcc version 4.8.4 (GCC) ) #1 SMP Sat Sep 7 08:09:48 IST 2019
+[    0.000000] CPU: ARMv7 Processor [420f00f3] revision 3 (ARMv7), cr=30c7387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+[    0.000000] Machine model: cgm4233
+[    0.000000] moving dtb from 0x0000000013c3c000 to 0x000000000086de0c
+[    0.000000] Reserved memory: reserved region for node 'reserved-nodma@00000000': base 0x0000000000000000, size 0 MiB
+[    0.000000] Reserved memory: reserved region for node 'reserved-RG-memc0': base 0x0000000004000000, size 220 MiB
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] MCP: Disabling write pairing
+[    0.000000] PERCPU: Embedded 8 pages/cpu @9fbdd000 s8768 r8192 d15808 u32768
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 130048
+[    0.000000] Kernel command line: ubi.mtd=flash1.rg1 rootfstype=ubifs root=ubi0:rootfs platformboot ubifs_apps jffs2_data coherent_pool=1M noXonsole Xonsole=null
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Memory: 285736K/524288K available (5987K kernel code, 318K rwdata, 1824K rodata, 256K init, 201K bss, 238552K reserved, 0K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0xa0800000 - 0xff000000   (1512 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0xa0000000   ( 512 MB)
+[    0.000000]     modules : 0x7f000000 - 0x80000000   (  16 MB)
+[    0.000000]       .text : 0x80008000 - 0x807a9014   (7813 kB)
+[    0.000000]       .init : 0x807aa000 - 0x807ea240   ( 257 kB)
+[    0.000000]       .data : 0x807ec000 - 0x8083b800   ( 318 kB)
+[    0.000000]        .bss : 0x8083b808 - 0x8086de0c   ( 202 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] irq_brcmstb_l2: registered L2 intc (mem: 0xfc403000, parent irq: 95)
+[    0.000000] irq_brcmstb_l2: registered L2 intc (mem: 0xfc4a1000, parent irq: 63)
+[    0.000000] irq_brcmstb_l2: registered L2 intc (mem: 0xfc410640, parent irq: 97)
+[    0.000000] irq_brcmstb_l2: registered L2 intc (mem: 0xfc431200, parent irq: 50)
+[    0.000000] irq_bcm7120_l2: registered BCM7120 L2 intc (mem: 0xfc40a600, parent IRQ(s): 2)
+[    0.000000] irq_bcm7120_l2: registered BCM7120 L2 intc (mem: 0xfc417200, parent IRQ(s): 3)
+[    0.000000] Architected cp15 timer(s) running at 27.00MHz (virt).
+[    0.000003] sched_clock: 56 bits at 27MHz, resolution 37ns, wraps every 2545165795328ns
+[    0.000008] Switching to timer-based delay loop
+[    0.000133] Calibrating delay loop (skipped), value calculated using timer frequency.. 54.00 BogoMIPS (lpj=270000)
+[    0.000143] pid_max: default: 32768 minimum: 301
+[    0.000238] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.000244] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.003649] Initializing cgroup subsys debug
+[    0.003660] Initializing cgroup subsys devices
+[    0.003666] Initializing cgroup subsys freezer
+[    0.003671] Initializing cgroup subsys blkio
+[    0.003697] CPU: Testing write buffer coherency: ok
+[    0.003869] CPU0: update cpu_power 1024
+[    0.003876] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.003916] Setting up static identity map for 0x5b1d00 - 0x5b1d58
+[    0.005718] ubus 6 segment capture space: d3e00000 size 1000
+[    0.005726] ubus 2 segment capture space: d7e00000 size 1000
+[    0.006337] CPU1: Booted secondary processor
+[    0.006355] CPU1: update cpu_power 1024
+[    0.006358] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.006456] Brought up 2 CPUs
+[    0.006465] SMP: Total of 2 processors activated.
+[    0.006470] CPU: All CPU(s) started in SVC mode.
+[    0.006857] devtmpfs: initialized
+[    0.010746] VFP support v0.3: implementor 42 architecture 4 part 00 variant 0 rev 0
+[    0.011052] pinctrl core: initialized pinctrl subsystem
+[    0.011427] regulator-dummy: no parameters
+[    0.011697] NET: Registered protocol family 16
+[    0.012209] DMA: preallocated 1024 KiB pool for atomic coherent allocations
+[    0.012893] cpuidle: using governor ladder
+[    0.012899] cpuidle: using governor menu
+[    0.017438] syscon f0404000.syscon: regmap [mem 0xf0404000-0xf040452f] registered
+[    0.017608] syscon f04a2400.syscon: regmap [mem 0xf04a2400-0xf04a27ff] registered
+[    0.017771] syscon f0450000.syscon: regmap [mem 0xf0450000-0xf04500ff] registered
+[    0.017920] syscon f0404100.syscon: regmap [mem 0xf0404100-0xf040413f] registered
+[    0.018068] syscon f0404140.syscon: regmap [mem 0xf0404140-0xf0404167] registered
+[    0.018222] syscon f0410700.syscon: regmap [mem 0xf0410700-0xf041070b] registered
+[    0.018384] syscon f041070c.syscon: regmap [mem 0xf041070c-0xf0410713] registered
+[    0.018536] syscon f1501004.syscon: regmap [mem 0xf1501004-0xf1501403] registered
+[    0.018684] syscon f0404080.syscon: regmap [mem 0xf0404080-0xf0404083] registered
+[    0.018831] syscon f04040a4.syscon: regmap [mem 0xf04040a4-0xf04040a7] registered
+[    0.018978] syscon f04a0154.syscon: regmap [mem 0xf04a0154-0xf04a0157] registered
+[    0.019124] syscon f04a0354.syscon: regmap [mem 0xf04a0354-0xf04a0357] registered
+[    0.019277] syscon f04a0400.syscon: regmap [mem 0xf04a0400-0xf04a0403] registered
+[    0.023798] irq: no irq domain found for /rdb/gpio@f040a000 !
+[    0.024296] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.024301] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.024368] Broadcom Brahma-B15 readahead cache at: 0xfc4a2478
+[    0.024515] brcm-mbox driver v1.0
+[    0.038150] bio: create slab <bio-0> at 0
+[    0.039127] brcmstb-gpio f040a000.gpio: Couldn't get wake IRQ - GPIOs will not be able to wake from sleep
+[    0.039141] brcmstb-gpio f040a000.gpio: Registered 5 banks (GPIO(s): 0-159)
+[    0.039451] brcmstb-gpio f0417000.gpio: Couldn't get wake IRQ - GPIOs will not be able to wake from sleep
+[    0.039461] brcmstb-gpio f0417000.gpio: Registered 2 banks (GPIO(s): 160-223)
+[    0.039960] vreg-wl0: no parameters
+[    0.040163] vreg-wl1: no parameters
+[    0.040336] vreg-wl2: no parameters
+[    0.040508] vreg-wl0-rf: no parameters
+[    0.040671] vreg-wl1-rf: no parameters
+[    0.041173] SCSI subsystem initialized
+[    0.041854] usbcore: registered new interface driver usbfs
+[    0.041938] usbcore: registered new interface driver hub
+[    0.042040] usbcore: registered new device driver usb
+[    0.043957] Enabled regulator(vreg-wl0).
+[    0.044026] brcm-pci f1080000.pcie: adjusting to legacy (broken) pcie DT
+[    0.044046] brcm-pci f1080000.pcie: could not get clock
+[    0.044061] brcm-pci f1080000.pcie: cannot get msi intr; MSI disabled
+[    0.044222] Enabled regulator(vreg-wl1).
+[    0.044230] brcm-pci f1090000.pcie: adjusting to legacy (broken) pcie DT
+[    0.044243] brcm-pci f1090000.pcie: could not get clock
+[    0.044254] brcm-pci f1090000.pcie: cannot get msi intr; MSI disabled
+[    0.079555] brcm-pci f1080000.pcie: link up, 5.0 Gbps x1 (SSC)
+[    0.079743] PCI host bridge to bus 0000:00
+[    0.079753] pci_bus 0000:00: root bus resource [mem 0xc0000000-0xc7ffffff]
+[    0.079759] pci_bus 0000:00: root bus resource [io  0x1000-0xffff]
+[    0.079765] pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+[    0.079796] brcm-pci f1080000.pcie: found device 14e4:3390 on bus 0 (PCIe0), slot 0 (irq 75)
+[    0.080084] PCI: bus0: Fast back to back transfers disabled
+[    0.080091] pci 0000:00:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+[    0.080261] brcm-pci f1080000.pcie: found device 14e4:4360 on bus 1 (PCIe0), slot 0 (irq 75)
+[    0.100085] PCI: bus1: Fast back to back transfers disabled
+[    0.104118] brcm-pci f1090000.pcie: link up, 5.0 Gbps x1 (SSC)
+[    0.104273] PCI host bridge to bus 0000:02
+[    0.104282] pci_bus 0000:02: root bus resource [mem 0xc8000000-0xcbffffff]
+[    0.104288] pci_bus 0000:02: root bus resource [io  0x10000-0x1ffff]
+[    0.104294] pci_bus 0000:02: No busn resource found for root bus, will use [bus 02-ff]
+[    0.104319] brcm-pci f1090000.pcie: found device 14e4:3390 on bus 2 (PCIe1), slot 0 (irq 82)
+[    0.104563] PCI: bus2: Fast back to back transfers disabled
+[    0.104571] pci 0000:02:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+[    0.104731] brcm-pci f1090000.pcie: found device 14e4:4365 on bus 3 (PCIe1), slot 0 (irq 82)
+[    0.120094] PCI: bus3: Fast back to back transfers disabled
+[    0.120151] pci 0000:02:00.0: BAR 8: assigned [mem 0xc8000000-0xc8bfffff]
+[    0.120159] pci 0000:02:00.0: BAR 9: assigned [mem 0xc8c00000-0xc8cfffff 64bit pref]
+[    0.120168] pci 0000:03:00.0: BAR 2: assigned [mem 0xc8000000-0xc87fffff 64bit]
+[    0.120190] pci 0000:03:00.0: BAR 4: assigned [mem 0xc8c00000-0xc8cfffff 64bit pref]
+[    0.120212] pci 0000:03:00.0: BAR 0: assigned [mem 0xc8800000-0xc8807fff 64bit]
+[    0.120232] pci 0000:02:00.0: PCI bridge to [bus 03]
+[    0.120240] pci 0000:02:00.0:   bridge window [mem 0xc8000000-0xc8bfffff]
+[    0.120246] pci 0000:02:00.0:   bridge window [mem 0xc8c00000-0xc8cfffff 64bit pref]
+[    0.120263] pci 0000:00:00.0: BAR 8: assigned [mem 0xc0000000-0xc00fffff]
+[    0.120271] pci 0000:01:00.0: BAR 0: assigned [mem 0xc0000000-0xc0007fff 64bit]
+[    0.120291] pci 0000:00:00.0: PCI bridge to [bus 01]
+[    0.120298] pci 0000:00:00.0:   bridge window [mem 0xc0000000-0xc00fffff]
+[    0.120336] Switched to clocksource arch_sys_counter
+[    0.122130] thermal thermal_zone0: failed to read out thermal zone 0
+[    0.122201] NET: Registered protocol family 2
+[    0.122557] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.122582] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.122626] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.122652] TCP: reno registered
+[    0.122658] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.122671] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.122791] NET: Registered protocol family 1
+[    0.122972] RPC: Registered named UNIX socket transport module.
+[    0.122978] RPC: Registered udp transport module.
+[    0.122981] RPC: Registered tcp transport module.
+[    0.122985] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.123259] hw perfevents: enabled with ARMv7 Cortex-A15 PMU driver, 7 counters available
+[    0.124497] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.132960] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.133771] NFS: Registering the id_resolver key type
+[    0.133792] Key type id_resolver registered
+[    0.133797] Key type id_legacy registered
+[    0.133806] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    0.133820] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.134195] fuse init (API version 7.22)
+[    0.134935] msgmni has been set to 558
+[    0.135627] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+[    0.135633] io scheduler noop registered
+[    0.135637] io scheduler deadline registered
+[    0.135795] io scheduler cfq registered (default)
+[    0.136009] brcm-gisb-arb f0400000.gisb-arb: registered mem: fc400000, irqs: 259, 260
+[    0.136532] brcm-usb-phy f1000200.usb-phy: Clock not found in Device Tree
+[    0.250726] pinctrl-single f04040a4.pinmux: allocating 1568 pins
+[    0.251720] pinctrl-single f04040a4.pinmux: 1568 pins at pa fc4040a4 size 196
+[    0.252484] PCI: enabling device 0000:00:00.0 (0140 -> 0143)
+[    0.252739] PCI: enabling device 0000:02:00.0 (0140 -> 0143)
+[    0.253203] pcieport 0000:00:00.0: Signaling PME through PCIe PME interrupt
+[    0.253209] pci 0000:01:00.0: Signaling PME through PCIe PME interrupt
+[    0.253239] pcieport 0000:02:00.0: Signaling PME through PCIe PME interrupt
+[    0.253245] pci 0000:03:00.0: Signaling PME through PCIe PME interrupt
+[    0.313495] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.315424] f040a900.serial: ttyS0 at MMIO 0xf040a900 (irq = 108, base_baud = 5062500) is a 16550A
+[    1.445927] console [ttyS0] enabled
+[    1.450177] f040a940.serial: ttyS1 at MMIO 0xf040a940 (irq = 109, base_baud = 5062500) is a 16550A
+[    1.459764] f040a980.serial: ttyS2 at MMIO 0xf040a980 (irq = 110, base_baud = 5062500) is a 16550A
+[    1.470474] d3881800.serial: ttyS3 at MMIO 0xd3881800 (irq = 111, base_baud = 5062500) is a 16550A
+[    1.485777] brd: module loaded
+[    1.491798] loop: module loaded
+[    1.496170] brcmnand f04a2800.nand: using HIF_INTR2 cascaded IRQ
+[    1.502375] brcmnand f04a2800.nand: enabling FLASH_DMA
+[    1.507786] nand: device found, Manufacturer ID: 0x2c, Chip ID: 0xdc
+[    1.514164] nand: Micron MT29F4G08ABADAH4
+[    1.518177] nand: 512MiB, SLC, page size: 2048, OOB size: 64
+[    1.523860] brcmnand f04a2800.nand: 512MiB total, 128KiB blocks, 2KiB pages, 16B OOB, 8-bit, BCH-4
+[    1.523860] 
+[    1.534655] Bad block table found at page 262080, version 0x01
+[    1.540867] Bad block table found at page 262016, version 0x01
+[    1.547059] 11 ofpart partitions found on MTD device f04a2800.nand
+[    1.553266] Creating 11 MTD partitions on "f04a2800.nand":
+[    1.558760] 0x000000000000-0x000003520000 : "flash1.rdknonvol"
+[    1.565416] 0x000003520000-0x000003640000 : "flash1.BankerTable"
+[    1.572144] 0x000003640000-0x000003760000 : "flash1.Stage2Update"
+[    1.578929] 0x000003760000-0x000003ea0000 : "flash1.kernel0"
+[    1.585282] 0x000003ea0000-0x000005200000 : "flash1.cm0"
+[    1.591293] 0x000005200000-0x0000117e0000 : "flash1.rg0"
+[    1.597348] 0x0000117e0000-0x000011f20000 : "flash1.kernel1"
+[    1.603707] 0x000011f20000-0x000013280000 : "flash1.cm1"
+[    1.609701] 0x000013280000-0x00001f860000 : "flash1.rg1"
+[    1.615750] 0x00001f860000-0x000020000000 : "flash1.unused"
+[    1.622013] 0x000000000000-0x000020000000 : "flash1"
+[    1.628108] spi_brcmstb f04a3400.spi: unable to get clock
+[    1.633533] spi_brcmstb f04a3400.spi: 1-lane output, 3-byte address
+[    1.639926] spi_brcmstb f04a3400.spi: master is unqueued, this is deprecated
+[    1.647267] m25p80 spi32766.0: found mx25l6405d, expected m25p80
+[    1.653313] m25p80 spi32766.0: mx25l6405d (8192 Kbytes)
+[    1.658597] 17 ofpart partitions found on MTD device spi32766.0
+[    1.664545] Creating 17 MTD partitions on "spi32766.0":
+[    1.669778] 0x000000000000-0x000000090000 : "flash0.bolt"
+[    1.675951] 0x000000090000-0x0000000f0000 : "flash0.cmnonvol1"
+[    1.682481] 0x0000000f0000-0x000000100000 : "flash0.DevProfile_RO"
+[    1.689334] 0x000000100000-0x0000001d0000 : "flash0.SSBL_ALT"
+[    1.695797] 0x0000001d0000-0x000000200000 : "flash0.macadr"
+[    1.702075] 0x000000200000-0x000000210000 : "flash0.Trackers0"
+[    1.708600] 0x000000210000-0x000000220000 : "flash0.Trackers1"
+[    1.715133] 0x000000220000-0x000000240000 : "flash0.nvram"
+[    1.721293] 0x000000240000-0x000000260000 : "flash0.nvram1"
+[    1.727501] 0x000000260000-0x000000280000 : "flash0.devtree0"
+[    1.733903] 0x000000280000-0x0000002a0000 : "flash0.devtree1"
+[    1.740304] 0x0000002a0000-0x000000300000 : "flash0.cmnonvol0"
+[    1.746808] 0x000000300000-0x000000310000 : "flash0.DevProfile"
+[    1.753408] 0x000000310000-0x000000320000 : "flash0.TSFS_Exception"
+[    1.760355] 0x000000320000-0x000000390000 : "flash0.rgnonvol0"
+[    1.766850] 0x000000390000-0x000000400000 : "flash0.rgnonvol1"
+[    1.773340] 0x000000000000-0x000000800000 : "flash0"
+[    1.781397] libphy: Fixed MDIO Bus: probed
+[    1.785940] PPP generic driver version 2.4.2
+[    1.790471] PPP BSD Compression module registered
+[    1.795180] PPP Deflate Compression module registered
+[    1.800238] pegasus: v0.9.3 (2013/04/25), Pegasus/Pegasus II USB Ethernet driver
+[    1.807744] usbcore: registered new interface driver pegasus
+[    1.813508] usbcore: registered new interface driver asix
+[    1.818990] usbcore: registered new interface driver ax88179_178a
+[    1.825181] usbcore: registered new interface driver cdc_ether
+[    1.831125] usbcore: registered new interface driver cdc_ncm
+[    1.837289] xhci-brcm: xHCI BRCM driver
+[    1.841201] xhci-brcm f1001000.xhci_v2: Clock not found in Device Tree
+[    1.847750] xhci-brcm f1001000.xhci_v2: xHCI Host Controller
+[    1.853584] xhci-brcm f1001000.xhci_v2: new USB bus registered, assigned bus number 1
+[    1.861566] xhci-brcm f1001000.xhci_v2: irq 117, io mem 0xf1001000
+[    1.868321] hub 1-0:1.0: USB hub found
+[    1.872114] hub 1-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    1.879384] xhci-brcm f1001000.xhci_v2: xHCI Host Controller
+[    1.885211] xhci-brcm f1001000.xhci_v2: new USB bus registered, assigned bus number 2
+[    1.893601] hub 2-0:1.0: USB hub found
+[    1.897379] hub 2-0:1.0: 1 port detected
+[    1.901712] ehci-brcm: EHCI BRCM driver
+[    1.905615] ehci-brcm f1000300.ehci_v2: Clock not found in Device Tree
+[    1.912169] ehci-brcm f1000300.ehci_v2: EHCI Host Controller
+[    1.917986] ehci-brcm f1000300.ehci_v2: new USB bus registered, assigned bus number 3
+[    1.935905] ehci-brcm f1000300.ehci_v2: irq 113, io mem 0xf1000300
+[    1.960348] ehci-brcm f1000300.ehci_v2: USB 2.0 started, EHCI 1.00
+[    1.967056] hub 3-0:1.0: USB hub found
+[    1.970842] hub 3-0:1.0: 1 port detected
+[    1.975120] ohci-brcm: OHCI BRCM driver
+[    1.979012] ohci-brcm f1000400.ohci_v2: Clock not found in Device Tree
+[    1.985563] ohci-brcm f1000400.ohci_v2: BRCM OHCI controller
+[    1.991379] ohci-brcm f1000400.ohci_v2: new USB bus registered, assigned bus number 4
+[    1.999259] ohci-brcm f1000400.ohci_v2: irq 115, io mem 0xf1000400
+[    2.064858] hub 4-0:1.0: USB hub found
+[    2.068631] hub 4-0:1.0: 1 port detected
+[    2.073447] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    2.079988] ehci-pci: EHCI PCI platform driver
+[    2.084540] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    2.090742] ohci-pci: OHCI PCI platform driver
+[    2.095457] usbcore: registered new interface driver usb-storage
+[    2.101649] usbcore: registered new interface driver usbserial
+[    2.107558] usbcore: registered new interface driver option
+[    2.113217] usbserial: USB Serial support registered for GSM modem (1-port)
+[    2.120244] i2c /dev entries driver
+[    2.123966] brcmstb-i2c f040a400.i2c: I2C driver probe entry.
+[    2.129732] brcmstb-i2c f040a400.i2c: using default port select:0
+[    2.136317] brcmstb-i2c f040a400.i2c:  @50000hz registered in polling mode using port select:0
+[    2.145121] brcmstb_thermal: set trips 0 <--> 125000
+[    2.150091] brcmstb_thermal: disable trip, type 0
+[    2.154809] brcmstb_thermal: set temp 1 to 125000
+[    2.159518] brcmstb_thermal: enable trip, type 1
+[    2.164264] brcmstb_thermal f0431500.thermal: registered AVS TMON of-sensor driver
+[    2.172444] bcm7038-wdt f040a128.watchdog: Registered Broadcom Watchdog
+[    2.179212] bcm7038-wdt f10b0928.watchdog: Registered Broadcom Watchdog
+[    2.185989] bcm7038-wdt f040a200.watchdog: Registered Broadcom Watchdog
+[    2.192801] cpufreq_cpu0: failed to get cpu0 regulator: -19
+[    2.198503] cpufreq: CPU: Clock frequency 1503 MHz
+[    2.203587] sdhci: Secure Digital Host Controller Interface driver
+[    2.209773] sdhci: Copyright(c) Pierre Ossman
+[    2.214144] sdhci-pltfm: SDHCI platform and OF driver helper
+[    2.219856] sdhci-brcmstb f04a0000.sdhci: Clock not found in Device Tree
+[    2.227614] mmc0: no vqmmc regulator found
+[    2.231724] mmc0: no vmmc regulator found
+[    2.280642] mmc0: SDHCI controller on f04a0000.sdhci [f04a0000.sdhci] using ADMA
+[    2.323980] brcm-fpm: FPM with 2 pool(s)
+[    2.332491] brcm-dqm: DQM device cpucomm with 96 Q's
+[    2.337771] rpc_service_init: initializing rpc_init service
+[    2.343401] rpc_register_functions registered rpc_init service with 1 functions
+[    2.350727] rpc_service_init: initializing rpc_misc service
+[    2.356339] rpc_service_init: initializing rpc_flash service
+[    2.362044] rpc_service_init: skipping inactive rpc_nonvol service
+[    2.368230] rpc_service_init: initializing rpc_erouter service
+[    2.374112] rpc_service_init: skipping inactive rpc_erouter_pm service
+[    2.380653] rpc_service_init: initializing rpc_wpsctl service
+[    2.386436] rpc_service_init: skipping inactive rpc_bash service
+[    2.392457] rpc_service_init: skipping inactive rpc_testu service
+[    2.398555] rpc_service_init: skipping inactive rpc_ccsp service
+[    2.404667] dev-name = rg-cm
+[    2.407552] dqm = cpucomm
+[    2.410173] tx-q = 2h
+[    2.412455] rx-q = 3h
+[    2.414737] rpc_probe sent handshake message
+[    2.419028] dev-name = svm-cm
+[    2.422006] dqm = cpucomm
+[    2.424627] tx-q = 14h
+[    2.426988] rx-q = 15h
+[    2.429354] rpc_probe sent handshake message
+[    2.433971] brcm-ba driver v1.0
+[    2.438000] rpc_register_functions registered rpc_misc service with 13 functions
+[    2.445642] WBID driver version 1.0
+[    2.449135] WBID i2c client registered with addr:0x24
+[    2.455745] WBID(x.y):4095.15 WBID:0xffff
+[    2.460217] MDQM_Init
+[    2.462705] iperf device initialized
+[    2.466333] Netfilter messages via NETLINK v0.30.
+[    2.471088] nf_conntrack version 0.5.0 (4464 buckets, 17856 max)
+[    2.477661] gre: GRE over IPv4 demultiplexor driver
+[    2.482561] ip_gre: GRE over IPv4 tunneling driver
+[    2.488333] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    2.493724] ipt_CLUSTERIP: ClusterIP Version 0.8 loaded successfully
+[    2.500110] arp_tables: (C) 2002 David S. Miller
+[    2.504746] TCP: cubic registered
+[    2.508063] Initializing XFRM netlink socket
+[    2.512928] NET: Registered protocol family 10
+[    2.517936] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    2.523978] ip6_gre: GRE over IPv6 tunneling driver
+[    2.529334] NET: Registered protocol family 17
+[    2.533810] NET: Registered protocol family 15
+[    2.538297] Bridge firewalling registered
+[    2.542327] Ebtables v2.0 registered
+[    2.545972] l2tp_core: L2TP core driver, V2.0
+[    2.550344] 8021q: 802.1Q VLAN Support v1.8
+[    2.554554] Key type dns_resolver registered
+[    2.558906] Registering SWP/SWPB emulation handler
+[    2.564628] vreg-wl2: disabling
+[    2.567779] regulator-dummy: disabling
+[    2.571877] UBI: attaching mtd8 to ubi0
+[    3.074748] random: nonblocking pool is initialized
+[    3.530392] UBI: scanning is finished
+[    3.544236] UBI: attached mtd8 (name "flash1.rg1", size 197 MiB) to ubi0
+[    3.550974] UBI: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    3.557774] UBI: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    3.564491] UBI: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    3.571379] UBI: good PEBs: 1583, bad PEBs: 0, corrupted PEBs: 0
+[    3.577391] UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    3.584541] UBI: max/mean erase counter: 24/12, WL threshold: 256, image sequence number: 1259875053
+[    3.593688] UBI: available PEBs: 0, total reserved PEBs: 1583, PEBs reserved for bad PEB handling: 80
+[    3.602932] UBI: background thread "ubi_bgt0d" started, PID 1362
+[    3.649065] UBIFS: recovery needed
+[    3.689220] UBIFS: recovery deferred
+[    3.692929] UBIFS: mounted UBI device 0, volume 0, name "rootfs", R/O mode
+[    3.699819] UBIFS: LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    3.708988] UBIFS: FS size: 188940288 bytes (180 MiB, 1488 LEBs), journal size 9023488 bytes (8 MiB, 72 LEBs)
+[    3.718933] UBIFS: reserved for root: 0 bytes (0 KiB)
+[    3.724017] UBIFS: media format: w4/r0 (latest is w4/r0), UUID 54FCCB3A-91AF-46C9-AF55-E4D4AB1C50E3, small LPT model
+[    3.735527] VFS: Mounted root (ubifs filesystem) readonly on device 0:13.
+[    3.744066] devtmpfs: mounted
+[    3.747164] Freeing unused kernel memory: 256K (807aa000 - 807ea000)
+[    4.000019] systemd[1]: systemd 216 running in system mode. (+PAM -AUDIT -SELINUX +IMA -APPARMOR +SMACK +SYSVINIT -LIBCRYPTSETUP -GCRYPT -GNUTLS +ACL +XZ -LZ4 -SECCOMP -BLKID -ELFUTILS +KMOD -IDN )
+[    4.019321] systemd[1]: Detected architecture 'arm'.
+
+Welcome to [1mRDK (A Yocto Project based Distro) 2.0 (daisy)[0m!
+
+[    4.061037] systemd[1]: Set hostname to <Docsis-Gateway>.
+[    4.069108] systemd[1]: Initializing machine ID from random generator.
+[    4.075770] systemd[1]: Installed transient /etc/machine-id file.
+[    4.091626] systemd[1]: Hardware watchdog 'Broadcom Watchdog Timer', version 0
+[    4.098905] watchdog watchdog0: watchdog stopped
+[    4.103712] systemd[1]: Set hardware watchdog to 1min 15s.
+[    4.556553] systemd[1]: Cannot add dependency job for unit systemd-fsck-root.service, ignoring: Unit systemd-fsck-root.service failed to load: No such file or directory.
+[    4.578291] systemd[1]: Starting Forward Password Requests to Wall Directory Watch.
+[    4.586207] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    4.593878] systemd[1]: Expecting device dev-ttyS0.device...
+         Expecting device dev-ttyS0.device...
+[    4.621558] systemd[1]: Starting Remote File Systems.
+[[32m  OK  [0m] Reached target Remote File Systems.
+[    4.651383] systemd[1]: Reached target Remote File Systems.
+[    4.657723] systemd[1]: Starting Dispatch Password Requests to Console Directory Watch.
+[    4.666373] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[    4.674369] systemd[1]: Starting Swap.
+[[32m  OK  [0m] Reached target Swap.
+[    4.701387] systemd[1]: Reached target Swap.
+[    4.706228] systemd[1]: Starting Root Slice.
+[[32m  OK  [0m] Created slice Root Slice.
+[    4.741214] systemd[1]: Created slice Root Slice.
+[    4.746493] systemd[1]: Starting User and Session Slice.
+[[32m  OK  [0m] Created slice User and Session Slice.
+[    4.771394] systemd[1]: Created slice User and Session Slice.
+[    4.777741] systemd[1]: Starting /dev/initctl Compatibility Named Pipe.
+[[32m  OK  [0m] Listening on /dev/initctl Compatibility Named Pipe.
+[    4.811437] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[    4.818961] systemd[1]: Starting Delayed Shutdown Socket.
+[[32m  OK  [0m] Listening on Delayed Shutdown Socket.
+[    4.841416] systemd[1]: Listening on Delayed Shutdown Socket.
+[    4.847699] systemd[1]: Starting Journal Socket (/dev/log).
+[[32m  OK  [0m] Listening on Journal Socket (/dev/log).
+[    4.871381] systemd[1]: Listening on Journal Socket (/dev/log).
+[    4.878019] systemd[1]: Starting udev Control Socket.
+[[32m  OK  [0m] Listening on udev Control Socket.
+[    4.901365] systemd[1]: Listening on udev Control Socket.
+[    4.907479] systemd[1]: Starting udev Kernel Socket.
+[[32m  OK  [0m] Listening on udev Kernel Socket.
+[    4.931449] systemd[1]: Listening on udev Kernel Socket.
+[    4.937366] systemd[1]: Starting Journal Socket.
+[[32m  OK  [0m] Listening on Journal Socket.
+[    4.961459] systemd[1]: Listening on Journal Socket.
+[    4.967333] systemd[1]: Starting System Slice.
+[[32m  OK  [0m] Created slice System Slice.
+[    4.991373] systemd[1]: Created slice System Slice.
+[    4.996943] systemd[1]: Starting Service for attaching nonvol ubi device......
+         Starting Service for attaching nonvol ubi device......
+[    5.032990] systemd[1]: Mounting Temporary Directory...
+         Mounting Temporary Directory...
+[    5.063039] systemd[1]: Starting system-getty.slice.
+[[32m  OK  [0m] Created slice system-getty.slice.
+[    5.090677] systemd[1]: Created slice system-getty.slice.
+[    5.096217] systemd[1]: Starting system-serial\x2dgetty.slice.
+[[32m  OK  [0m] Created slice system-serial\x2dgetty.slice.
+[    5.120779] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[    5.127437] systemd[1]: Mounting POSIX Message Queue File System...
+         Mounting POSIX Message Queue File System...
+[    5.162773] systemd[1]: Starting Create list of required static device nodes for the current kernel...
+         Starting Create list of required st... nodes for the current kernel...
+[    5.196458] systemd[1]: Starting udev Coldplug all Devices...
+         Starting udev Coldplug all Devices...
+[    5.226502] systemd[1]: Mounting Debug File System...
+         Mounting Debug File System...
+[    5.253598] systemd[1]: Mounted Huge Pages File System.
+[    5.273206] systemd[1]: Started Load Kernel Modules.
+[    5.278433] systemd[1]: Mounted Configuration File System.
+[    5.284719] systemd[1]: Mounting FUSE Control File System...
+         Mounting FUSE Control File System...
+[    5.314289] systemd[1]: Starting Apply Kernel Variables...
+         Starting Apply Kernel Variables...
+[    5.345441] systemd[1]: Starting Journal Service...
+         Starting Journal Service...
+[[32m  OK  [0m] Started Journal Service.
+[    5.410503] systemd[1]: Started Journal Service.
+[[32m  OK  [0m] Reached target Slices.
+         Starting Remount Root and Kernel File Systems...
+[[32m  OK  [0m] Mounted FUSE Control File System.
+[[32m  OK  [0m] Mounted Debug File System.
+[[32m  OK  [0m] Mounted POSIX Message Queue File System.
+[    5.510997] systemd-journald[1390]: [/etc/systemd/journald.conf:36] Unknown lvalue 'SystemMaxFiles' in section 'Journal'
+[   5.522376] systemd-journald[1390]: [/etc/systemd/journald.conf:37] Unknown lvalue 'RuntimeMaxFiles' in section 'Journal'
+[[32m  OK  [0m] Mounted Temporary Directory.
+[    5.539814] UBIFS: completing deferred recovery
+[    5.546055] UBI: attaching mtd0 to ubi10
+[[32m  OK  [0m] Started Create list of required sta...ce nodes for the current kernel.
+[[32m  OK  [0m] Started Apply Kernel Variables.
+[    5.776986] UBIFS: background thread "ubifs_bgt0_0" started, PID 2456
+[    5.780986] UBIFS: deferred recovery completed
+[    5.915502] UBI: scanning is finished
+[    5.928972] UBI: attached mtd0 (name "flash1.rdknonvol", size 53 MiB) to ubi10
+[    5.936258] UBI: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    5.943074] UBI: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    5.949788] UBI: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    5.956684] UBI: good PEBs: 425, bad PEBs: 0, corrupted PEBs: 0
+[    5.962626] UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    5.969775] UBI: max/mean erase counter: 244/142, WL threshold: 256, image sequence number: 160269651
+[    5.979018] UBI: available PEBs: 212, total reserved PEBs: 213, PEBs reserved for bad PEB handling: 40
+[    5.988428] UBI: background thread "ubi_bgt10d" started, PID 2461
+[[32m  OK  [0m] Started Remount Root and Kernel File Systems.
+[    6.029229] UBIFS: background thread "ubifs_bgt10_0" started, PID 2465
+[[32m  OK  [0m] Started udev Coldplug all Devices.
+[    6.078440] UBIFS: recovery needed
+[    6.092241] tch_nonvol.sh[1371]: UBI device number 10, total 425 LEBs (53964800 bytes, 51.5 MiB), available 212 LEBs (26918912 bytes, 25.7 MiB), LEB size 126976 bytes (124.0 KiB)
+[    6.122814] tch_nonvol.sh[1371]: Successfully attached rdknonvol to /dev/mtd0
+[    6.152542] tch_nonvol.sh[1371]: Volume ID:   0 (on ubi10)
+[    6.174463] tch_nonvol.sh[1371]: Type:        dynamic
+[    6.201361] tch_nonvol.sh[1371]: Alignment:   1
+[    6.221284] tch_nonvol.sh[1371]: Size:        169 LEBs (21458944 bytes, 20.5 MiB)
+[    6.240784] tch_nonvol.sh[1371]: State:       OK
+[    6.256725] UBIFS: recovery completed
+[    6.260536] UBIFS: mounted UBI device 10, volume 0, name "data"
+[    6.266476] UBIFS: LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    6.266480] UBIFS: FS size: 20189184 bytes (19 MiB, 159 LEBs), journal size 1015809 bytes (0 MiB, 8 LEBs)
+[    6.266486] UBIFS: reserved for root: 953584 bytes (931 KiB)
+[    6.266492] UBIFS: media format: w4/r0 (latest is w4/r0), UUID 78D45E9E-B2B8-4DEE-933E-4451CE4D4213, small LPT model
+[    6.260849] tch_nonvol.sh[1371]: Name:        data         
+Starting Create Static Device Nodes in /dev...
+[    6.302289] tch_nonvol.sh[1371]: Character device major/minor: 244:1
+[[32m  OK  [0m] Started Service for attaching nonvol ubi device....
+[[32m  OK  [0m] Started Create Static Device Nodes in /dev.
+         Starting udev Kernel Device Manager...
+[[32m  OK  [0m] Reached target Local File Systems (Pre).
+         Mounting /var...
+[    6.500907] systemd-udevd[2470]: starting version 216
+[[32m  OK  [0m] Started udev Kernel Device Manager.
+[[32m  OK  [0m] Mounted /var.
+         Mounting /var/volatile...
+         Starting Load/Save Random Seed...
+[[32m  OK  [0m] Mounted /var/volatile.
+[[32m  OK  [0m] Reached target Local File Systems.
+         Starting Trigger Flushing of Journal to Persistent Storage...
+         Starting Create Volatile Files and Directories...
+[[32m  OK  [0m] Started Load/Save Random Seed.
+[[32m  OK  [0m] Found device /dev/ttyS0.
+[[32m  OK  [0m] Started Create Volatile Files and Directories.
+[    6.844530] systemd-journald[1390]: Received request to flush runtime journal from PID 1
+[[32m  OK  [0m] Started Trigger Flushing of Journal to Persistent Storage.
+         Starting Network Time Synchronization...
+         Starting Update UTMP about System Boot/Shutdown...
+[[32m  OK  [0m] Started Network Time Synchronization.
+[    7.090117] wps_gpio wifi_wps.26: WPS LED/PBC: Initializing the WPS  LKM-->
+[    7.097430] wps_gpio wifi_wps.26: Requesting IRQ 266 with flags 0x00000003 for GPIO 99.
+[[32m  OK  [0m] Started Update UTMP about System Boot/Shutdown.
+[[32m  OK  [0m] Reached target System Initialization.
+[[32m  OK  [0m] Reached target Paths.
+[[32m  OK  [0m] Listening on D-Bus System Message Bus Socket.
+[[32m  OK  [0m] Reached target Sockets.
+[[32m  OK  [0m] Reached target Timers.
+[[32m  OK  [0m] Reached target Basic System.
+         Starting SSBL Update...
+         Starting Simple Network Management Protocol (SNMP) Daemon....
+         Starting DCM Init Service, will boot CM up, and fork some daemons....
+         Starting Rpc service for ccsp...
+         Starting Pam Initialized service...
+[[32m  OK  [0m] Started Pam Initialized service.
+[    7.646081] rpc_service_init: initializing rpc_ccsp service
+         [    7.652636] rpc_register_functions registered rpc_ccsp service with 256 functions
+Starting LED Service...
+[[32m  OK  [0m] Started LED Service.
+         Starting watchdog feed service...
+[    7.711591] rpc_service_init: initializing rpc_testu service
+[    7.717839] rpc_register_functions registered rpc_testu service with 256 functions
+         Starting RG Init Service....
+         Starting Login Service...
+         Starting D-Bus System Message Bus...
+[[32m  OK  [0m] Started D-Bus System Message Bus.
+[    7.838228] jffs2: Empty flash at 0x00010ffc ends at 0x00011000
+[    7.846063] jffs2: Empty flash at 0x00011ffc ends at 0x00012000
+[    7.853768] jffs2: Empty flash at 0x00012ffc ends at 0x00013000
+[    7.859816] jffs2: CLEANMARKER node found at 0x00013000, not first node in block (0x00010000)
+[    7.869974] jffs2: Empty flash at 0x0001300c ends at 0x00014000
+[    7.875990] jffs2: CLEANMARKER node found at 0x00014000, not first node in block (0x00010000)
+[    7.886120] jffs2: Empty flash at 0x0001400c ends at 0x00015000
+[    7.892159] jffs2: CLEANMARKER node found at 0x00015000, not first node in block (0x00010000)
+[    7.951631] jffs2: Empty flash at 0x0001500c ends at 0x00016000
+[    7.957582] jffs2: CLEANMARKER node found at 0x00016000, not first node in block (0x00010000)
+[    7.967676] jffs2: Empty flash at 0x0001600c ends at 0x00017000
+[    7.973639] jffs2: CLEANMARKER node found at 0x00017000, not first node in block (0x00010000)
+[    7.985290] jffs2: Empty flash at 0x0001700c ends at 0x00018000
+[    7.991287] jffs2: CLEANMARKER node found at 0x00018000, not first node in block (0x00010000)
+[    8.001347] jffs2: Empty flash at 0x0001800c ends at 0x00019000
+[    8.007279] jffs2: CLEANMARKER node found at 0x00019000, not first node in block (0x00010000)
+[    8.018858] jffs2: Empty flash at 0x0001900c ends at 0x0001a000
+[    8.024811] jffs2: CLEANMARKER node found at 0x0001a000, not first node in block (0x00010000)
+[    8.034985] jffs2: Empty flash at 0x0001a00c ends at 0x0001b000
+[    8.040969] jffs2: CLEANMARKER node found at 0x0001b000, not first node in block (0x00010000)
+[    8.052536] jffs2: Empty flash at 0x0001b00c ends at 0x0001c000
+[    8.058478] jffs2: CLEANMARKER node found at 0x0001c000, not first node in block (0x00010000)
+[    8.116438] jffs2: Empty flash at 0x0001c00c ends at 0x0001d000
+[    8.122573] jffs2: CLEANMARKER node found at 0x0001d000, not first node in block (0x00010000)
+[    8.134177] jffs2: Empty flash at 0x0001d00c ends at 0x0001e000
+[    8.143130] jffs2: Empty flash at 0x0001effc ends at 0x0001f000
+[    8.149074] jffs2: CLEANMARKER node found at 0x0001f000, not first node in block (0x00010000)
+[    8.162464] jffs2: Empty flash at 0x00030fd4 ends at 0x00031000
+[    8.168408] jffs2: CLEANMARKER node found at 0x00031000, not first node in block (0x00030000)
+[    8.178483] jffs2: Empty flash at 0x0003100c ends at 0x00032000
+[    8.184438] jffs2: CLEANMARKER node found at 0x00032000, not first node in block (0x00030000)
+[    8.196023] jffs2: Empty flash at 0x0003200c ends at 0x00033000
+[    8.201980] jffs2: CLEANMARKER node found at 0x00033000, not first node in block (0x00030000)
+[    8.212059] jffs2: Empty flash at 0x0003300c ends at 0x00034000
+[    8.218001] jffs2: CLEANMARKER node found at 0x00034000, not first node in block (0x00030000)
+[    8.229808] jffs2: Empty flash at 0x0003400c ends at 0x00035000
+[    8.235799] jffs2: CLEANMARKER node found at 0x00035000, not first node in block (0x00030000)
+[    8.245921] jffs2: Empty flash at 0x0003500c ends at 0x00036000
+[    8.251880] jffs2: CLEANMARKER node found at 0x00036000, not first node in block (0x00030000)
+[    8.263467] jffs2: Empty flash at 0x0003600c ends at 0x00037000
+[    8.269398] jffs2: CLEANMARKER node found at 0x00037000, not first node in block (0x00030000)
+[    8.279455] jffs2: Empty flash at 0x0003700c ends at 0x00038000
+[    8.285397] jffs2: CLEANMARKER node found at 0x00038000, not first node in block (0x00030000)
+[    8.296970] jffs2: Empty flash at 0x0003800c ends at 0x00039000
+[    8.302913] jffs2: CLEANMARKER node found at 0x00039000, not first node in block (0x00030000)
+[    8.313012] jffs2: Empty flash at 0x0003900c ends at 0x0003a000
+[    8.319005] jffs2: CLEANMARKER node found at 0x0003a000, not first node in block (0x00030000)
+[    8.330811] jffs2: Empty flash at 0x0003a00c ends at 0x0003b000
+[    8.336744] jffs2: CLEANMARKER node found at 0x0003b000, not first node in block (0x00030000)
+[    8.346831] jffs2: Empty flash at 0x0003b00c ends at 0x0003c000
+[    8.352962] jffs2: CLEANMARKER node found at 0x0003c000, not first node in block (0x00030000)
+[    8.365435] jffs2: Empty flash at 0x0003c00c ends at 0x0003d000
+[    8.372650] jffs2: CLEANMARKER node found at 0x0003d000, not first node in block (0x00030000)
+[    8.382906] jffs2: Empty flash at 0x0003d00c ends at 0x0003e000
+[    8.388871] jffs2: CLEANMARKER node found at 0x0003e000, not first node in block (0x00030000)
+[    8.405109] jffs2: Empty flash at 0x0003e00c ends at 0x0003f000
+[    8.415634] jffs2: Empty flash at 0x00040f7c ends at 0x00041000
+[    8.421840] jffs2: CLEANMARKER node found at 0x00041000, not first node in block (0x00040000)
+[    8.433831] jffs2: CLEANMARKER node found at 0x00022000, not first node in block (0x00020000)
+[    8.444053] jffs2: Empty flash at 0x0004100c ends at 0x00042000
+[    8.445584] jffs2: Empty flash at 0x0002200c ends at 0x00023000
+[    8.445588] jffs2: CLEANMARKER node found at 0x00023000, not first node in block (0x00020000)
+[    8.448648] jffs2: Empty flash at 0x0002300c ends at 0x00024000
+[    8.448650] jffs2: CLEANMARKER node found at 0x00024000, not first node in block (0x00020000)
+[    8.450154] jffs2: Empty flash at 0x0002400c ends at 0x00025000
+[    8.450157] jffs2: CLEANMARKER node found at 0x00025000, not first node in block (0x00020000)
+[    8.458971] jffs2: Empty flash at 0x0002500c ends at 0x00026000
+[    8.458977] jffs2: CLEANMARKER node found at 0x00026000, not first node in block (0x00020000)
+[    8.460499] jffs2: Empty flash at 0x0002600c ends at 0x00027000
+[    8.460505] jffs2: CLEANMARKER node found at 0x00027000, not first node in block (0x00020000)
+[    8.463523] jffs2: Empty flash at 0x0002700c ends at 0x00028000
+[    8.463525] jffs2: CLEANMARKER node found at 0x00028000, not first node in block (0x00020000)
+[    8.465029] jffs2: Empty flash at 0x0002800c ends at 0x00029000
+[    8.465032] jffs2: CLEANMARKER node found at 0x00029000, not first node in block (0x00020000)
+[    8.468034] jffs2: Empty flash at 0x0002900c ends at 0x0002a000
+[    8.468037] jffs2: CLEANMARKER node found at 0x0002a000, not first node in block (0x00020000)
+[    8.469537] jffs2: Empty flash at 0x0002a00c ends at 0x0002b000
+[    8.469539] jffs2: CLEANMARKER node found at 0x0002b000, not first node in block (0x00020000)
+[    8.472560] jffs2: Empty flash at 0x0002b00c ends at 0x0002c000
+[    8.472562] jffs2: CLEANMARKER node found at 0x0002c000, not first node in block (0x00020000)
+[    8.474063] jffs2: Empty flash at 0x0002c00c ends at 0x0002d000
+[    8.474069] jffs2: CLEANMARKER node found at 0x0002d000, not first node in block (0x00020000)
+[    8.477077] jffs2: Empty flash at 0x0002d00c ends at 0x0002e000
+[    8.477080] jffs2: CLEANMARKER node found at 0x0002e000, not first node in block (0x00020000)
+[    8.478584] jffs2: Empty flash at 0x0002e00c ends at 0x0002f000
+[    8.478586] jffs2: CLEANMARKER node found at 0x0002f000, not first node in block (0x00020000)
+         Starting Permit User Sessions...
+[    8.643699] jffs2: Empty flash at 0x00042ffc ends at 0x00043000
+[    8.651162] jffs2: Empty flash at 0x000437a4 ends at 0x00044000
+[[32m  OK  [0m[    8.662824] jffs2: Empty flash at 0x00044ffc ends at 0x00045000
+] Reached target System Time Syn[    8.672286] jffs2: Empty flash at 0x00045ffc ends at 0x00046000
+chronized.
+[    8.679199] jffs2: Node totlen on flash (0xffffffff) != totlen from node ref (0x00000044)
+[    8.680841] jffs2: Empty flash at 0x00046ffc ends at 0x00047000
+[    8.680844] jffs2: CLEANMARKER node found at 0x00047000, not first node in block (0x00040000)
+[    8.682352] jffs2: Empty flash at 0x0004700c ends at 0x00048000
+[    8.682354] jffs2: CLEANMARKER node found at 0x00048000, not first node in block (0x00040000)
+[    8.683853] jffs2: Empty flash at 0x0004800c ends at 0x00049000
+[    8.683856] jffs2: CLEANMARKER node found at 0x00049000, not first node in block (0x00040000)
+[    8.686864] jffs2: Empty flash at 0x0004900c ends at 0x0004a000
+[    8.686866] jffs2: CLEANMARKER node found at 0x0004a000, not first node in block (0x00040000)
+[    8.688369] jffs2: Empty flash at 0x0004a00c ends at 0x0004b000
+[    8.688371] jffs2: CLEANMARKER node found at 0x0004b000, not first node in block (0x00040000)
+[    8.691378] jffs2: Empty flash at 0x0004b00c ends at 0x0004c000
+[    8.694375] jffs2: Empty flash at 0x0004cffc ends at 0x0004d000
+[    8.695883] jffs2: Empty flash at 0x0004dffc ends at 0x0004e000
+[    8.695885] jffs2: CLEANMARKER node found at 0x0004e000, not first node in block (0x00040000)
+[    8.697389] jffs2: Empty flash at 0x0004e00c ends at 0x0004f000
+[    8.705030] jffs2: Empty flash at 0x00053fa0 ends at 0x00054000
+[    8.709523] jffs2: CLEANMARKER node found at 0x00057000, not first node in block (0x00050000)
+[    8.711025] jffs2: Empty flash at 0x0005700c ends at 0x00058000
+[    8.711028] jffs2: CLEANMARKER node found at 0x00058000, not first node in block (0x00050000)
+[    8.712528] jffs2: Empty flash at 0x0005800c ends at 0x00059000
+[    8.714035] jffs2: CLEANMARKER node found at 0x0005a000, not first node in block (0x00050000)
+[    8.717039] jffs2: Empty flash at 0x0005a00c ends at 0x0005b000
+[    8.717042] jffs2: CLEANMARKER node found at 0x0005b000, not first node in block (0x00050000)
+[    8.718541] jffs2: Empty flash at 0x0005b00c ends at 0x0005c000
+[    8.718543] jffs2: CLEANMARKER node found at 0x0005c000, not first node in block (0x00050000)
+[    8.721547] jffs2: Empty flash at 0x0005c00c ends at 0x0005d000
+[    8.723055] jffs2: CLEANMARKER node found at 0x0005e000, not first node in block (0x00050000)
+[    8.726061] jffs2: Empty flash at 0x0005e00c ends at 0x0005f000
+[    8.726063] jffs2: CLEANMARKER node found at 0x0005f000, not first node in block (0x00050000)
+[    8.732199] jffs2: Empty flash at 0x00061ffc ends at 0x00062000
+[    8.732201] jffs2: CLEANMARKER node found at 0x00062000, not first node in block (0x00060000)
+[    8.733705] jffs2: Empty flash at 0x0006200c ends at 0x00063000
+[    8.733707] jffs2: CLEANMARKER node found at 0x00063000, not first node in block (0x00060000)
+[    8.735207] jffs2: Empty flash at 0x0006300c ends at 0x00064000
+[    8.735209] jffs2: CLEANMARKER node found at 0x00064000, not first node in block (0x00060000)
+[    8.738214] jffs2: Empty flash at 0x0006400c ends at 0x00065000
+[    8.738216] jffs2: CLEANMARKER node found at 0x00065000, not first node in block (0x00060000)
+[    8.739716] jffs2: Empty flash at 0x0006500c ends at 0x00066000
+[    8.739718] jffs2: CLEANMARKER node found at 0x00066000, not first node in block (0x00060000)
+[    8.742724] jffs2: Empty flash at 0x0006600c ends at 0x00067000
+[    8.742726] jffs2: CLEANMARKER node found at 0x00067000, not first node in block (0x00060000)
+[    8.744226] jffs2: Empty flash at 0x0006700c ends at 0x00068000
+[    8.744228] jffs2: CLEANMARKER node found at 0x00068000, not first node in block (0x00060000)
+[    8.747229] jffs2: Empty flash at 0x0006800c ends at 0x00069000
+[    8.750236] jffs2: Empty flash at 0x00069ff0 ends at 0x0006a000
+[[1;31mFAILED[0m] Failed to start SSBL Update.
+[    9.034476] jffs2: CLEANMARKER node found at 0x00011000, not first node in block (0x00010000)
+[    9.035371] jffs2: Node totlen on flash (0xffffffff) != totlen from node ref (0x00000044)
+See 'systemctl status systemd-ssbl-update.servic[    9.055419] jffs2: Empty flash at 0x0001100c ends at 0x00012000
+e' for details.[    9.062221] jffs2: CLEANMARKER node found at 0x00012000, not first node in block (0x00010000)
+
+[    9.075530] jffs2: Empty flash at 0x0001200c ends at 0x00013000
+[    9.081623] jffs2: CLEANMARKER node found at 0x00013000, not first node in block (0x00010000)
+[    9.091838] jffs2: Empty flash at 0x0001300c ends at 0x00014000
+[    9.097774] jffs2: CLEANMARKER node found at 0x00014000, not first node in block (0x00010000)
+[[32m  OK  [0m] Started Rpc se[    9.109488] jffs2: Empty flash at 0x0001400c ends at 0x00015000
+rvice for ccsp.[    9.115845] jffs2: CLEANMARKER node found at 0x00015000, not first node in block (0x00010000)
+
+[    9.127604] jffs2: Empty flash at 0x0001500c ends at 0x00016000
+[    9.133907] jffs2: CLEANMARKER node found at 0x00016000, not first node in block (0x00010000)
+[[32m  OK  [0m[    9.146691] jffs2: Empty flash at 0x0001600c ends at 0x00017000
+] Started watchd[    9.154325] jffs2: CLEANMARKER node found at 0x00017000, not first node in block (0x00010000)
+og feed service.
+[    9.165749] jffs2: Empty flash at 0x0001700c ends at 0x00018000
+[    9.165979] watchdog watchdog1: watchdog stopped
+[    9.177831] jffs2: CLEANMARKER node found at 0x00018000, not first node in block (0x00010000)
+[[32m  OK  [0m] Started Permit User Sessions.[    9.191753] jffs2: Empty flash at 0x0001800c ends at 0x00019000
+
+[    9.197926] jffs2: CLEANMARKER node found at 0x00019000, not first node in block (0x00010000)
+[    9.208172] jffs2: Empty flash at 0x0001900c ends at 0x0001a000
+[    9.214228] jffs2: CLEANMARKER node found at 0x0001a000, not first node in block (0x00010000)
+[    9.225835] jffs2: Empty flash at 0x0001a00c ends at 0x0001b000
+[    9.231789] jffs2: CLEANMARKER node found at 0x0001b000, not first node in block (0x00010000)
+[    9.242685] jffs2: Empty flash at 0x0001b00c ends at 0x0001c000
+[    9.248617] jffs2: CLEANMARKER node found at 0x0001c000, not first node in block (0x00010000)
+[    9.260232] jffs2: Empty flash at 0x0001c00c ends at 0x0001d000
+[    9.266275] jffs2: CLEANMARKER node found at 0x0001d000, not first node in block (0x00010000)
+[    9.276378] jffs2: Empty flash at 0x0001d00c ends at 0x0001e000
+[   9.282351] jffs2: CLEANMARKER node found at 0x0001e000, not first node in block (0x00010000)
+[[32m  OK  [0m] Started DCM In[    9.296391] jffs2: Empty flash at 0x0001e00c ends at 0x0001f000
+it Service, will[    9.303751] jffs2: CLEANMARKER node found at 0x0001f000, not first node in block (0x00010000)
+ boot CM up, and fork some daemons..
+[    9.328411] jffs2: CLEANMARKER node found at 0x00036000, not first node in block (0x00030000)
+[    9.339017] jffs2: Empty flash at 0x0003600c ends at 0x00037000
+[    9.345796] jffs2: CLEANMARKER node found at 0x00037000, not first node in block (0x00030000)
+[    9.357036] jffs2: Empty flash at 0x0003700c ends at 0x00038000
+[    9.363029] jffs2: CLEANMARKER node found at 0x00038000, not first node in block (0x00030000)
+[[32m  OK  [0m] Started Login Service.
+[    9.374933] jffs2: Empty flash at 0x0003800c ends at 0x00039000
+[    9.382052] jffs2: CLEANMARKER node found at 0x00039000, not first node in block (0x00030000)
+         [    9.392797] jffs2: Empty flash at 0x0003900c ends at 0x0003a000
+Starting Serial [    9.398838] jffs2: CLEANMARKER node found at 0x0003a000, not first node in block (0x00030000)
+Getty on ttyS0...
+[    9.412283] jffs2: Empty flash at 0x0003a00c ends at 0x0003b000
+[    9.418217] jffs2: CLEANMARKER node found at 0x0003b000, not first node in block (0x00030000)
+[    9.429295] jffs2: Empty flash at 0x0003b00c ends at 0x0003c000
+[    9.435445] jffs2: CLEANMARKER node found at 0x0003c000, not first node in block (0x00030000)
+[[32m  OK  [0m] Started Serial Getty on ttyS0.[    9.447344] jffs2: Empty flash at 0x0003c00c ends at 0x0003d000
+
+[    9.454680] jffs2: CLEANMARKER node found at 0x0003d000, not first node in block (0x00030000)
+[    9.469431] jffs2: Empty flash at 0x0003d00c ends at 0x0003e000
+[[32m  OK  [0m[    9.476578] jffs2: CLEANMARKER node found at 0x0003e000, not first node in block (0x00030000)
+] Reached target Login Prompts.
+[    9.489281] jffs2: Empty flash at 0x0003e00c ends at 0x0003f000
+[    9.495246] jffs2: CLEANMARKER node found at 0x0003f000, not first node in block (0x00030000)
+[[32m  OK  [0m] Started Simple Network Management Protocol (SNMP) Daemon..
+[    9.647565] ethsw_flow_control: Enabling ACB
+[    9.652220] ethsw_3390: Device ID 3390
+[    9.655817] ethsw_int: Ethsw interrupt initialized
+[    9.660820] ethsw_api: phy stop failed for port 0
+[    9.665531] ethsw_api: phy stop failed for port 1
+[    9.670247] ethsw_api: phy stop failed for port 2
+[    9.674970] ethsw_api: phy stop failed for port 3
+[    9.679719] ethsw_proc: /proc/driver/ethsw dir and files created
+[    9.685749] ethsw_proc: Ethsw proc initialized
+[    9.690198] ethsw_init_plat: Ethsw driver probed
+[    9.695628] ethsw_init_plat: Ethsw module initialized
+[    9.710070] libphy: UniMAC MII bus: probed
+[    9.714199] unimac-mdio d040062c.mdio: Broadcom UniMAC MII bus at 0xa0e2862c
+[    9.722099] libphy: Switch MDIO bus: probed
+[    9.729019] Broadcom BCM3390 d4e403c0.mdio:08: did not get GPHY clock
+[    9.738547] Broadcom BCM3390 d4e403c0.mdio:09: did not get GPHY clock
+[    9.747925] Broadcom BCM3390 d4e403c0.mdio:0a: did not get GPHY clock
+[    9.756890] Broadcom BCM3390 d4e403c0.mdio:0b: did not get GPHY clock
+[    9.763427] unimac-mdio d4e403c0.mdio: Broadcom Switch MDIO bus at 0xa0e2a3c0
+[    9.949058] rdpa: module license 'Proprietary' taints kernel.
+[    9.954906] Disabling lock debugging due to kernel taint
+[   10.040978] RDP Physical address=0xd5000000 Virtual address = 0xa3100000
+[   10.055244] passing rdd_init_params.runner_iptv_tables_base_ptr=0x9b00000
+[   10.125540] configure_runner: NATC keysize 0x100070 key element size 16 contextsize 0x400000 context element size 64
+[   10.150209] rdd_init_params.runner_nat_cache_key_ptr=0xa3200000
+[   10.156149] g_runner_ddr0_iptv_lookup_ptr=0xa3440000
+[   10.161156] g_runner_ddr0_iptv_context_ptr=0xa3400000
+[   10.166213] g_runner_ddr0_iptv_ssm_context_ptr=0xa3480000
+[   10.394817] FPM_BPM phy_addr 0xd3a30000,virt_addr 0xa0e7e000
+[   10.421906] jffs2: Newly-erased block contained word 0x31985 at offset 0x00050000
+[   10.702596] brcm-dqnet: net device priv0
+[   10.780714] d4e403c0.mdio:08: Broadcom BCM3390 PHY revision: 0x00, patch: 0
+[   10.870876] brcm-dqnet: net device eth0
+[   11.031074] brcm-dqnet: net device eth1
+[   11.191652] brcm-dqnet: net device eth2
+[   11.360629] brcm-dqnet: net device eth3
+[   11.410577] brcm-dqnet: net device cm0
+[   11.611109] FLOWMGR Init: v0.7 Sep  7 2019 08:09:56
+[   11.683395] FLOWMGR Register fap: 3
+[   11.762969] wl0: dqm cpucomm rx-q 33 tx-q 56 ssid:
+[   11.767609]  33 34
+[   11.769656]  35 36
+[   11.771748]  37 38
+[   11.773793]  39 40
+[   11.775835] 
+[   11.777524] wl1: dqm cpucomm rx-q 33 tx-q 58 ssid:
+[   11.782173]  41 42
+[   11.784219]  43 44
+[   11.786267]  45 46
+[   11.788312]  47 48
+[   11.790377] 
+jffs2: Newly-erased block contained word 0x31985 at offset 0x00040000
+jffs2: Newly-erased block contained word 0x31985 at offset 0x00030000
+jffs2: Newly-erased block contained word 0x31985 at offset 0x00060000
+
+RDK (A Yocto Project based Distro) 2.0 Docsis-Gateway ttyS0
+
+Docsis-Gateway login: DQM Init complete for dqm tunnel rg-cm
+DQM Init complete for dqm tunnel svm-cm
+ 
