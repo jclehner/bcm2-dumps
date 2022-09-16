@@ -1,0 +1,66 @@
+PU 01
+BCM33900060
+PRID33900060
+v1.18
+RR:00000001
+BFW
+layoutNum = 3
+Board is FGR or later.
+AVS init...
+B11
+STB V=00002817 D=000002b0
+DCM V=0000282f D=000002a3
+AVS init OK
+AVS load:select_image: addr_offset: 00005800 part_offset: 00000000 bootStatus: 2a002b00
+AVS load_code offset =00005800
+LOADED
+AVS: overtemp mon ON
+
+single board
+OTP Market ID        = 00000c3e
+FSBL Market ID       = 00000c3e
+Market ID Mask       = 00ffffff
+Secure Boot
+MARKET ID VALIDATION : PASS
+MEMSYS-ALT
+MEMSYS AUTHENTICATION: PASS
+SHMOO 03030100 BLD:memsys_3.3.0.0-5-gbbc1e43a0 HW:hpg0_generic V:3.3.1.0
+MCB: FLEX
+AVS start:status=000000ff
+STB: Current voltage=00000366(870)
+ temperature=00008ad1(35537)
+ PV=00000333(819)
+ MV=0000035c(860)
+DCD: Current voltage=00000367(871)
+ temperature=000088ea(35050)
+ PV=00000337(823)
+ MV=0000035c(860)
+AVS FW rev=30313978 [0.1.9.x]
+OK
+DDR0: MCB#2-2 !@ ffe0e318 <= ffe0de50 MEMSYS-0 @ f1500000
+DDR SCRAMBLER ENABLED
+OK
+Secure boot detected
+SSBL.SAO PROBE... found
+COPY CODE... DONE - CRC OK
+SSBL AUTHENTICATION: PASS
+Using SSBL_ALT
+
+      T E C H N I C O L O R      
+   _ _ _ _ _ _ _ _ _ _ _ _ _ _   
+  /_/_/_/_/_/_/_/_/_/_/_/_/_/_/  eBOLT 3.62.7.10 Bank SSBL_ALT
+  | | |_| | | |_| |_|_| |_| | |  
+  |_| | |_| |_| | | | |_| |_|_|  
+    |_|   |_|   |_| |_|     |_|  
+
+RESET CAUSE: 0x000001 power_on (1 of 32 possible causes)
+Overriding chip ID to be 3390, actual chip ID 0000
+MAC ADDRESS CHECKSUM FAILED
+MAC ADDRESS NOT PROGRAMMED; use macprog command
+AVS: park check
+AVS: temperature monitoring enabled
+AVS: STB: V=0.870V, T=+36.024C, PV=0.819V, MV=0.860V, FW=30313978 [0.1.9.x]
+AVS: DCD: V=0.869V, T=+35.537C, PV=0.823V, MV=0.860V
+warning: did not add macaddr to /pcie@f10c0000/pci@5,0
+Uncompressing Linux... done, booting the kernel.
+

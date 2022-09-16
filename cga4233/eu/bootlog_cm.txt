@@ -1,0 +1,138 @@
+BCM339060
+BCM3390G0 Bootloader version 2.7.0alpha4, Built by jenkins on Sep  7 2019 at 07:03:41
+RAM Windows size 63 mb
+
+Loading compressed image 2
+Loading 3,936,152 compressed bytes to 0x83a30000
+Decompressing DOCSIS image at 0x83a3005c to 0x80004000
+Decompressed image size 18,213,396 bytes (0x80004000-0x81162a14)
+Jumping to application at 0x80004000
+
+ eCos - hal_diag_init
+
+
+Using 66060288(0x03f00000) Bytes Ram Size from Mbox6.
+
+
+Using 66060288(0x03f00000) Bytes Ram Size from Mbox6.
+
+
+Using 66060288(0x03f00000) Bytes Ram Size from Mbox6.
+
+
+Using 66060288(0x03f00000) Bytes Ram Size from Mbox6.
+BcmHeapInitialize starts
+Init device '/dev/BrcmTelnetIoDriver'
+Init device '/dev/ttydiag'
+Init tty channel: 811622a8
+Init device '/dev/tty0'
+Init tty channel: 811622c8
+Init device '/dev/haldiag'
+HAL/diag SERIAL init
+Init device '/dev/ser0'
+BCM 33XX SERIAL init - dev: d3c00640.1
+Set output buffer - buf: 0x81332d40 len: 4096
+Set input buffer - buf: 0x81333d40 len: 4096
+BCM 33XX SERIAL config - UART = d3c00640, chan = 810ef9d4
+Init device '/dev/ser1'
+Init device '/dev/ser2'
+InitBoard: MIPS frequency 599900000
+InitBoard: MANUFACT bits 0xa
++------------------------------------------------------------------------+
+| This image is built using remote flash as nonvol.                      |
++------------------------------------------------------------------------+
+
+[00:00:00 01/01/1970] [tStartup] BcmBfcSystemFactory::NewBfcSystem:  BcmEmtaCmDocsisSystem
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Loading BootloaderStore driver...
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Loading ProgramStore driver...
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Loading NonVol driver...
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitStorageDrivers:  (BFC Target) Storage drivers initialized successfully.
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitDeviceAbstractions:  (BFC Target) Creating singletons for ProgramStore/BootloaderStore/NonVol devices...
+Detecting the next image number that we will store to by default...
+Bootloader indicates we are running image 2
+Image2 header is not valid!
+By default, we will dload to image number 2!
+
+ProgramStoreDriverSetAlternateSignature:: Alternate signature is set to D012
+[00:00:00 01/01/1970] [tStartup] BcmBfcStdEmbeddedTarget::InitDeviceAbstractions:  (BFC Target) Device abstraction singletons created successfully.
+
+Create task ITCi, priority set toCreating a new host CPU_COMM DQM manager. Instance: 83c78e68, DQM_REGS = d3801c00
+Creating a new host CPU_COMM DQM manager. Instance: 83c772b8, DQM_REGS = d3801c00
+ Creating a new host CPU_COMM DQM manager. Instance: 83c74904, DQM_REGS = d3801c00
+Creating a new host CPU_COMM DQM manager. Instance: 83c74854, DQM_REGS = d3801c00
+2Creating a new host CPU_COMM DQM manager. Instance: 83c72598, DQM_REGS = d3801c00
+Creating a new host CPU_COMM DQM manager. Instance: 83c724e0, DQM_REGS = d3801c00
+3Creating a new host CPU_COMM DQM manager. Instance: 83c7021c, DQM_REGS = d3801c00
+Creating a new host CPU_COMM DQM manager. Instance: 83c70164, DQM_REGS = d3801c00
+, stacksize=8704
+Create task ITCm, priority set to 23, stacksize=8704
+Create task ITCf, priority set to 23, stacksize=8704
+Create task ITCn, priority set to 23, stacksize=8704
+Create task ITCz, priority set to 23, stacksize=8704
+Create task ITCv, priority set to 23, stacksize=8704
+Create task ITCw, priority set to 23, stacksize=8704
+Create task ITCb, priority set to 23, stacksize=8704
+Create task ITCt, priority set to 23, stacksize=8704
+Create task ITCC, priority set to 23, stacksize=8704
+Create task ITCC1, priority set to 23, stacksize=8704
+Create task ITCTP1, priority set to 23, stacksize=8704
+Create task ITCSVM, priority set to 23, stacksize=8704
+LedController Version 11-1-2018
+BcmCmTCHNonVolSettings::GetSingletonInstance:  WARNING - the singleton instance is NULL, and someone is accessing it!
+
+Init Console Disabled
+
+=====TCHnv===== BcmCmTCHNonVolSettings::TchSetTchVersionUpgradeManagement value=2
+
+TCH DBG diplexer mode reseted to default value (auto) in dynamic section
+
+TCH DBG HW_ID initialisation to default in dynamic section
+[00:00:00 01/01/1970] [tStartup] BcmCmBpiNonVolSettings::BcmCmBpiNonVolSettings:  (Docsis CM BPI NonVol Settings) WARNING - Singleton pointer is not NULL!  There are multiple instances!  Leaving the singleton pointer alone...
+>>>>>>> CreateAndRegisterNonVolSettings : Instanciation of  BcmCmVendorBpiNonVolSettings <<<<<<<
+mtaNvCalcChecksum: checksum= 1273101532
+Reading Permanent settings from non-vol...
+ITCRPC: ITC CTL Tx sent initial handshake CODE0
+ITCRPC: ITC1 CTL Tx sent initial handshake CODE0
+ITCRPC: ITC CTL TP1 Tx sent initial handshake CODE0
+ITCRPC: ITC CTL SVM Tx sent initial handshake CODE0
+ITCRPC: ITC CTL Rx got first message event
+ITCRPC: ITC CTL Tx sent reply handshake message CODE1
+ITCRPC: ITC CTL SVM Rx got first message event
+ITCRPC: ITC CTL SVM Tx sent reply handshake message CODE1
+RPC Version 00000005
+DQM Init complete for tunnel 0
+RPC Version 00000005
+DQM Init complete for tunnel 3
+msg->msgData[1] = 1
+Warning: service 8 rx unregistered function 1
+Checksum for permanent settings:  0xb6053ee6
+[00:00:01 01/01/1970] [tStartup] BcmCmTCHNonVolSettings::ReadFromImpl:  (CM TCH NonVol Settings) ERROR - Buffer too small; doesn't have all of the Permanent settings!
+[00:00:01 01/01/1970] [tStartup] BcmCmTCHNonVolSettings::ReadFrom:  (CM TCH NonVol Settings) ERROR - CM TCH NonVol Settings failed to read all of its settings from the buffer!
+[00:00:01 01/01/1970] [tStartup] BcmBfcAppCompositeNonVolSettings::ReadFrom:  (BFC App Composite Nonvol Settings) ERROR - A contained Settings object failed to parse the Group settings!
+[00:00:01 01/01/1970] [tStartup] BcmBfcAppCompositeNonVolSettings::ReadFrom:  (BFC App Composite Nonvol Settings) WARNING - Read an unrecognized settings group from the buffer (magic number 0x73656375 'secu'); storing in raw form for compatibility...
+[00:00:01 01/01/1970] [tStartup] BcmCmTCHNonVolSettings::IsDefault:  (CM TCH NonVol Settings) Permanent settings are default!
+[00:00:01 01/01/1970] [tStartup] BcmEdvaNonVolSettings::IsDefault:  (EDVA NonVol Settings) Permanent settings are default!
+
+*
+*
+* One or more of the settings groups was missing, possibly as a result of a code upgrade.
+*
+*
+Settings were read and verified.
+
+
+Reading Dynamic settings from non-vol...
+Checksum for dynamic settings:  0x1d0fc2b8
+
+ReadFromImpl Console: 2, then set it!
+
+
+TCH DBG ReadFromImpl (dynamic section) : fHwSwitchableDiplexer mode = 0
+
+TCH DBG ReadFromImpl (dynamic section): Hardware Version (Layout.Model.BOM) = 3.3.2
+=====TCHnv===== BcmCmTCHNonVolSettings::fTchCurrentVoipStack value=2
+BcmCmTCHNonVolSettings::fTchCmScanFreq value= 0
+Settings were read and verified.
+
+Console input has been disabled in non-vol.
+Console output has been disabled in non-vol!  Goodbye...

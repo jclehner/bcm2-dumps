@@ -40,3 +40,8 @@ mtd26: 00070000 00010000 "flash0.rgnonvol1"
 mtd27: 00800000 00010000 "flash0"
 ```
 
+Bootlogs of the two UART consoles:
+
+* [RG](bootlog_rg.txt)
+* [CM](bootlog_cm.txt)
+
