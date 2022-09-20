@@ -40,7 +40,12 @@ mtd26: 00070000 00010000 "flash0.rgnonvol1"
 mtd27: 00800000 00010000 "flash0"
 ```
 
-bootlogs of the two UART consoles:
+This device's unique AES-256 keys (used for encrypting nonvol data) are:
+
+`cd7c76032e4c4dd97778b322bb627422311f2df843e91d92c63fd6625272c4c8` (big endian, i.e. CM)
+`03767ccdd94d4c2e22b37877227462bbf82d1f31921de94362d63fc6c8c47252` (little endian, i.e. RG)
+
+Bootlogs of the two UART consoles:
 
 * [RG](bootlog_rg.txt) (stock)
 * [RG](bootlog_rg_unlocked.txt) (unlocked)
