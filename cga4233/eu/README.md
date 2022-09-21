@@ -54,3 +54,5 @@ Bootlogs of the two UART consoles:
 If you want root access to the Linux part, flash `nvram_root.bin` to both `flash0.nvram`
 and `flash0.nvram1` partitions. This launches Linux with `init=/bin/sh`.
 
+Also check out [this thread](https://github.com/jclehner/bcm2-utils/issues/34) for some more info.
+
