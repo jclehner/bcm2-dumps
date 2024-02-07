@@ -1,5 +1,10 @@
-These dumps are from a Technicolor CGA4233EU. The particular device's
-label these images were dumped off of is shown below:
+Technicolor CGA4233EU
+=====================
+
+**NOTE: The `rg0` and `nvram` images are _not_ original. They have been modified to enable the Linux console, and
+login-less telnet on port 2323!**
+
+The particular device's label these images were dumped off of is shown below:
 
 ![label](label.jpg)
 
